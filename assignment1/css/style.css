@@ -1,11 +1,103 @@
 div{
-	border: 2px solid black;
-	margin: 5px;
+	margin: 0.5%;
+	box-sizing: border-box;
 }
 
-heading{
-	font-size: 200%;
-	font-family: sans-serif;
+body{
+	background-color: #C0C0C0;
+}
+
+div#yellow, div#green, div#blue{
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+h1{
+	font-size: 250%;
+	font-family: times;
 	font-weight: bold;
+	font-style: italic;
 	text-align: center;
+	width: 100%;
+}
+
+h2{
+	float: right;
+	width: 25%;
+	text-align: center;
+	font-weight: bold;
+	margin: 0px;
+	border-radius: 15px;
+}
+
+p{
+	clear: both;
+	padding: 10px;
+	text-align: justify;
+	font-family: serif;
+	font-size: 115%;
+}
+
+
+div#yellow{
+	color: red;
+	background-color: yellow;
+}
+
+div#green{
+	color: black;
+	background-color: green;
+}
+
+div#blue{
+	color: white;
+	background-color: blue;
+}
+
+div#yellow > h2{
+	color: yellow;
+	background-color: red;
+}
+
+div#green > h2{
+	color: green;
+	background-color: black;
+}
+
+div#blue > h2{
+	color: blue;
+	background-color: white
+}
+
+@media (max-width: 767px){
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	div#container{
+		position: relative;
+		overflow: hidden;
+	}
+
+	div#yellow, div#green{
+		float: left;
+		width: 49%;
+	}
+	div#blue{
+		clear: both;
+		width: 99%;
+	}
+}
+
+@media (min-width: 992px){
+
+	div#container{
+		position: relative;
+		overflow: hidden;
+	}
+
+	div#yellow, div#green, div#blue{
+		float: left;
+		width: 31%;
+	}
 }
