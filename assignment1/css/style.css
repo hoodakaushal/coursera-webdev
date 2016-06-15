@@ -71,7 +71,15 @@ div#blue > h2{
 }
 
 @media (max-width: 767px){
+		div#container{
+		position: relative;
+		overflow: hidden;
+	}
 
+	div#yellow, div#green, div#blue{
+		float: left;
+		clear: both;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
