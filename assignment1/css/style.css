@@ -2,3 +2,10 @@ div{
 	border: 2px solid black;
 	margin: 5px;
 }
+
+heading{
+	font-size: 200%;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
